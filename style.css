@@ -264,7 +264,27 @@ button[type="reset"]:hover {
     visibility: visible;
 }
 
-#slide3:checked ~ .arrows .prev-3 {
+#slide3:checked ~ .arrows .prev-3, #slide3:checked ~ .arrows .next-3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide4:checked ~ .arrows .prev-4, #slide4:checked ~ .arrows .next-4 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide5:checked ~ .arrows .prev-5, #slide5:checked ~ .arrows .next-5 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide6:checked ~ .arrows .prev-6, #slide6:checked ~ .arrows .next-6 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide7:checked ~ .arrows .prev-7 {
     opacity: 1;
     visibility: visible;
 }
