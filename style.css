@@ -358,3 +358,10 @@ p.trailer-texto {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+h1.saibamaisfilme {
+    font-size: 40px;
+    margin: 0;
+    color: rgb(255, 30, 30);
+
+}
