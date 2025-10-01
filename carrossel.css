@@ -1,0 +1,126 @@
+/*Esconder os inputs de rádio, pois estes são controlados pelos labels */ 
+
+.carrossel input [type="radio"] {
+    display: none;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 500px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap:10px;
+    z-index: 10;
+}
+
+.nav-btn {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+#slide1:checked ~ .navigation label:nht-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3) {
+    background-color: white;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.arrow.prev {
+    left: 0px;
+}
+
+.arrow.next {
+    right: 0px;
+}
+
+#slide1:checked ~ .arrows .next-1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide2:checked ~ .arrows .prev-2,
+#slide2:checked ~ .arrows .next-2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide3:checked ~ .arrows .prev-3 {
+    opacity: 1;
+    visibility: visible;
+}

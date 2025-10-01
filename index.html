@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crítica Cinéfila: Para todos os garotos que já amei.</title>
+</head>
+
+<body>
+    <header>
+        <h1>Crítica Cinéfila: Para todos os garotos que já amei.</h1>
+        <br>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="avaliações.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="carrossel">
+    <input type="radio" name="slides" id="slide1" class="slide-radio" checked>
+    <input type="radio" name="slides" id="slide2" class="slide-radio">
+    <input type="radio" name="slides" id="slide3" class="slide-radio">
+
+        <div class="slides">
+        <div class="slide">
+            <img src="imagem2.avif" alt="Imagem 1">
+        </div>
+        <div class="slide">
+            <img src="imagem1.avif" alt="Imagem 2">
+        </div>
+        <div class="slide">
+            <img src="imagem4.png" alt="Imagem 4">
+        </div>
+    </div>
+     <div class="arrows">
+        <label for="slide1" class="arrow prev prev-2">&lt;</label>
+        <label for="slide2" class="arrow prev prev-3">&lt;</label>
+
+        <label for="slide2" class="arrow next next-1">&gt;</label>
+        <label for="slide3" class="arrow next next-2">&gt;</label>
+    </div>
+
+    <div class="navigation">
+        <label for="slide1" class="nav-btn"></label>
+        <label for="slide2" class="nav-btn"></label>
+        <label for="slide3" class="nav-btn"></label>
+    </div>
+</div>
+
+        <section class="minha-avaliacao">
+            <h2>Minha análise de "Para Todos os Garotos que Já Amei"</h2>
+            <section class="minha-avaliacao-box">
+                <p class="minha-avaliacao-texto">
+                    "Para Todos os Garotos que Já Amei" é uma encantadora comédia romântica adolescente que captura a essência dos primeiros amores e das complicações que vêm com eles. A história gira em torno de Lara Jean Covey, uma jovem introvertida que escreve cartas de amor secretas para seus crushes, mas nunca as envia. Quando essas cartas são misteriosamente enviadas, Lara Jean se vê em meio a um turbilhão de emoções e situações inesperadas.
+                </p>
+                <section class="estrelas">⭐⭐⭐⭐⭐</section>
+
+                <div class="form">
+                    <h3 class="form-titulo">Deixe aqui seu comentário:</h3>
+                    <form class="formulario">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="mensagem">Comentário:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </form>
+                </div>
+            
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blog de Avaliação. Todos os direitos reservados.</p>
+        <p>Feito por: Emilly Raissa Nascimento</p>
+    </footer>
+</body>
+
+</html>
